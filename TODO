@@ -1,0 +1,5 @@
+Future changes
+
+1. Make the script take the config file as a param and generate output file from the config file name!
+2. Check if there is a fix to set origional time estimate, so the 1 minute log work hack can be removed.
+

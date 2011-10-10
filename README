@@ -1,0 +1,10 @@
+Author: Roger Unwin
+License: GPL
+
+This script is used to import tasks from CSV exports of google docs spreadsheets into Jira.
+
+See run.sh for examples on how to run it.  See the various config files for examples on how to configure it.
+
+History on this project has been truncated due to a password that slipped into the commit stream.
+
+
