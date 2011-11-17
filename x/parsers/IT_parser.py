@@ -65,6 +65,10 @@ class IT_parser(importer.Parser):
 
         if len(columns) > col_num("Support Developer") and columns[ col_num("Support Developer") ] != '':
             issue["task_description"] = issue["task_description"] + "\n\nSupport Developer: " + columns[col_num("Support Developer")]
+
+        if len(columns) > col_num("Outcome") and columns[ col_num("Outcome") ] != '':
+            issue["task_description"] = issue["task_description"] + "\n\nOutcome: " + columns[col_num("Outcome")]
+
         if len(columns) > col_num("Assignee"):
             #issue["task_assignee"] = settings['user_mappings.' + columns[ col_num("Assignee")].lower()]
             issue["task_assignee"] = columns[ col_num("Assignee")]
@@ -165,6 +169,7 @@ class IT_parser(importer.Parser):
                  if str(row["name"].strip()) == str(self.shared.work_package_task_component):
                      component_list.append(row["id"])
                      print self.shared.work_package_task_component + " MATCHED!!!!!!!!!!!!!!!!!!!!"
+                     
              if component_list.count > 0:
                  self.shared.soap.updateIssue(self.shared.auth, newissue['key'], [{"id":"components", "values": component_list}])
         
