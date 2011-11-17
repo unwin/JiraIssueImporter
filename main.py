@@ -47,6 +47,7 @@ def main():
     
     count = 0
     for tokens in csvReader:
+        tokens = [item.strip() for item in tokens] # Remove leading and trailing spaces from each field in the line.
         handled = False
         print str(tokens)
         for par in discovered_parsers:
