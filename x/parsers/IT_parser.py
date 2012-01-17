@@ -187,6 +187,7 @@ class IT_parser(importer.Parser):
 			 
              if versions_list.count > 0:
                  self.shared.soap.updateIssue(self.shared.auth, newissue['key'], [{"id":"versions", "values":versions_list}])
+                 self.shared.soap.updateIssue(self.shared.auth, newissue['key'], [{"id":"fixVersions", "values":versions_list}]) # lets set fixVersion too
              else:
                  print "It appears you didnt tell jira about the fix versions [" + str(issue["task_affects_versions"]) + "]"
 		 
