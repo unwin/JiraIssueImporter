@@ -7,14 +7,14 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 MI Task List.csv # optional, for unchallenged operation
+csv_file_name=R2 MI Task List - R2E2-MI.csv # optional, for unchallenged operation
 
 reporter=unwin      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2E1
+filter_value=R2E2
 
 
 [Projects] # (key, value)
@@ -59,9 +59,9 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8  # Risk (COs)
-R2E1-DM=9
-R2E2-DM=10
-R2E3-DM=11
+R2E1-MI=9
+R2E2-MI=10
+R2E3-MI=11
 Jira Task Num=12
 Priority=13
 Work Days=14

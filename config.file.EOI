@@ -7,7 +7,7 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 EOI Task List.csv # optional, for unchallenged operation
+csv_file_name=R2 EOI Task List - R2E1-EOI.csv # optional, for unchallenged operation
 
 reporter=unwin      # defaults to username, unless specified here
 
@@ -17,17 +17,6 @@ filter_folumn=Iteration
 filter_value=R2E1
 
 [Projects] # (key, value)
-Data Management - Release 1=CIDEVTEST  # CIDEVDM
-CI Development=CIDEVTEST  # CIDEV
-Common Execution Infrastructure - Release 1=CIDEVCEI
-Common Operating Infrastructure - Release 1=CIDEVCOI
-External Observatory Integration Release 1=CIDEVEOI
-Instrument Platform Agent Architecture=CIDEVIPAA
-Sensing and Acquisition - Release 1=CIDEVSA
-System Engineering - Construction Year 1=SYSENG
-System Integration, Test, and Validation - Release 1=CIINT
-CI Systems Administration=CISA
-User Experience=CIUX
 External Observatory Integration=CIDEVEOI
 
 [priorities]
@@ -67,9 +56,9 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8
-R1C1-EOI=9
-R1C2-EOI=10
-R1C3-EOI=11
+R2I1-EOI=9
+R2E1-EOI=10
+R2E2-EOI=11
 Jira Task Num=12
 Priority=13
 Work Days=14

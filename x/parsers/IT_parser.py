@@ -147,11 +147,11 @@ class IT_parser(importer.Parser):
         
         
         # new code! add a version every time, let it fail if already there.
-        try:
-            soap.addVersion(auth, self.shared.control_account_subsystem, {'name': issue["task_affects_versions"]})
-            print "1 ADDED new version " + issue["task_affects_versions"] + " to project " + self.shared.control_account_subsystem
-        except:
-            print "1 FAILED ADDED new version " + issue["task_affects_versions"] + " to project " + self.shared.control_account_subsystem
+        #try:
+        #    soap.addVersion(auth, self.shared.control_account_subsystem, {'name': issue["task_affects_versions"]})
+        #    print "1 ADDED new version " + issue["task_affects_versions"] + " to project " + self.shared.control_account_subsystem
+        #except:
+        #    print "1 FAILED ADDED new version " + issue["task_affects_versions"] + " to project " + self.shared.control_account_subsystem
 
         try:    
              newissue = self.shared.soap.createIssue(self.shared.auth, new_issue)

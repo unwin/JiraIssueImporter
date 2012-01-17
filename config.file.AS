@@ -7,7 +7,7 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 AS Task List.csv # optional, for unchallenged operation
+csv_file_name=R2 AS Task List - R2E1-AS.csv # optional, for unchallenged operation
 
 reporter=tampe    # defaults to username, unless specified here
 
@@ -17,7 +17,6 @@ filter_folumn=Iteration
 filter_value=R2E1
 
 [Projects] # (key, value)
-Common Execution Infrastructure=CIDEVCEI
 Analysis & Synthesis=CIDEVAS
 
 [priorities]
