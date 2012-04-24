@@ -82,7 +82,7 @@ class IT_parser(importer.Parser):
         if len(columns) > col_num("Risk (RTs)"):
             issue["task_risk"] = columns[col_num("Risk (RTs)")] # NEEDS TO BE PUT INTO A CUSTOM FIELD
 
-        print "WHY ARE THERE NO AFFECTS VERSIONS OR FIX VERSIONS!!!!!"
+        #print "WHY ARE THERE NO AFFECTS VERSIONS OR FIX VERSIONS!!!!!"
         issue["task_affects_versions"] = ''
         for col in settings["Used_mappings.AffectsVersion"].split(','):
             if columns[int(col)].lower().find('x') >= 0:

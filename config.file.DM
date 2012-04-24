@@ -7,14 +7,14 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 DM Task List - R2E2-DM.csv # optional, for unchallenged operation
+csv_file_name=R2 DM Task List - R2E3-DM.csv # optional, for unchallenged operation
 
-reporter=unwin      # defaults to username, unless specified here
+reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2E2
+filter_value=R2E3
 
 
 [Projects] # (key, value)

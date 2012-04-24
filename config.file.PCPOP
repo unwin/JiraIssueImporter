@@ -6,8 +6,8 @@
 #url=https://jira.oceanobservatories.org/tasks/
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
-password=password      # optional, for unchallenged operation
-csv_file_name=PortlandCyberPoP.csv # optional, for unchallenged operation
+#password=password      # optional, for unchallenged operation
+csv_file_name=PortlandCyberPoPopulated-mj.csv
 
 reporter=mjames      # defaults to username, unless specified here
 
