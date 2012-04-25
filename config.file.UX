@@ -7,14 +7,14 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 UX Task List - R2E3-UX.csv # optional, for unchallenged operation
+csv_file_name=R2 UX Task List - R2C1-UX.csv # optional, for unchallenged operation
 
 reporter=tampe  # tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2E3
+filter_value=R2C1
 
 [Projects] # (key, value)
 User Experience=CIUX
@@ -45,8 +45,8 @@ Should Complete=7
 Good to Complete=8
 Nice to Complete=9
 
-[field_mappings]    # This designates the column mappings from the google spreadsheet CSV to what we do with them????
-
+#WBS,Type,CO-ID,IT-ID,Iteration,Task,Description,Outcome of task (deliverables),Risk (COs),R2C1-UX,R2C2-UX,R2C3-UX,Jira Task#,Priority,Work days,Assignee,Support Roles,,,,,,,,,,
+[field_mappings]  # This designates the column mappings from the google spreadsheet CSV to what we do with them????
 OOI_CATEGORY_NUMBER=0 #?? This column should stay set until reset by another value. Blank = use last defined value.
 Type=1
 RT-ID=2 #CO-ID
@@ -56,19 +56,19 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8  # Risk (COs)
-R2E1-UX=9
-R2E2-UX=10
-R2E3-UX=11
+R2C1-UX=9
+R2C2-UX=10
+R2C3-UX=11
 Jira Task Num=12
 Priority=13
 Work Days=14
-Remaining Work Days=15
-Confidence=16
-Assignee=17
-Support Developer=18 # Now Support Roles
-Design URL=19 # Description Page URL
-Comments=20 # Questions and comments
-Possible Risks=21 # Status
+#Remaining Work Days=15
+#Confidence=16
+Assignee=15
+Support Developer=16 # Now Support Roles
+Possible Risks=17 # Status
+Design URL=18 # Description Page URL
+Comments=19 # Questions and comments
 # Confluence Ready=23
 
 
@@ -77,7 +77,7 @@ TaskTitle=5
 Description=6
 Priority=13
 TimeEstimate=14
-Assignee=17
+Assignee=15
 AffectsVersion=9,10,11 # if X in column, then add column name to affects version.
 Components=0 # value should stay set until overwritten by a non blank value.  Also need to do a link lookup on it.
 [output_mappings] # Column to overwrite with values resulting from addition to Jira.  Dumps input back as output, with the addition of these column mappings which overwrite the origional contents.

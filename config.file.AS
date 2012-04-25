@@ -7,14 +7,14 @@
 url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 AS Task List - R2E2-AS.csv # optional, for unchallenged operation
+csv_file_name=R2 AS Task List - R2C1-AS.csv # optional, for unchallenged operation
 
 reporter=tampe    # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2E2
+filter_value=R2C1
 
 [Projects] # (key, value)
 Analysis & Synthesis=CIDEVAS
@@ -48,6 +48,9 @@ Nice to Complete=9
 
 [field_mappings]    # This designates the column mappings from the google spreadsheet CSV to what we do with them????
 
+
+#WBS,Type,CO-ID,IT-ID,Iteration,Task,Description,Outcome of task (deliverables),Risk (COs),R2C1-AS,R2C2-AS,R2C3-AS,Jira Task#,Priority,Work days,Remaining Work Days,Confidence,Assignee,Support Roles,Design URL,Questions and Comments,Possible Risks,Confluence Ready,Status
+
 OOI_CATEGORY_NUMBER=0 #?? This column should stay set until reset by another value. Blank = use last defined value.
 Type=1
 RT-ID=2
@@ -57,9 +60,9 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8  # Risk (COs)
-R2E1-AS=9
-R2E2-AS=10
-R2E3-AS=11
+R2C1-AS=9
+R2C2-AS=10
+R2C3-AS=11
 Jira Task Num=12
 Priority=13
 Work Days=14
@@ -71,7 +74,7 @@ Design URL=19
 Comments=20
 Possible Risks=21
 Confluence Ready=22
-
+Status=23
 [Used_mappings]    # This designates the column numbers to what the migrator will use them for, possibly making above redundant.
 TaskTitle=5
 Description=6
