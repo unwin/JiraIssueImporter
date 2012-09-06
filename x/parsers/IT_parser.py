@@ -164,8 +164,11 @@ class IT_parser(importer.Parser):
              components = self.shared.soap.getComponents(self.shared.auth, str(project['key']))
              versions = self.shared.soap.getVersions(self.shared.auth, str(project['key']))
              component_list = []
-             for row in components:
-                 print str(row["name"].strip()) + ' ?= ' + str(self.shared.work_package_task_component)
+             for row in components: 
+                 try:
+                     print str(row["name"].strip()) + ' ?= ' + str(self.shared.work_package_task_component)
+                 except:
+                     print "got exception in component trying to print"
                  if str(row["name"].strip()) == str(self.shared.work_package_task_component):
                      component_list.append(row["id"])
                      print self.shared.work_package_task_component + " MATCHED!!!!!!!!!!!!!!!!!!!!"

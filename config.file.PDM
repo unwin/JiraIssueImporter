@@ -3,18 +3,18 @@
 #                           '[ ]' contains section designators.
 
 [jira] # Configuration information for jira.
-#url=https://jira.oceanobservatories.org/tasks/
-url=https://jira-dev.oceanobservatories.org/tasks
+url=https://jira.oceanobservatories.org/tasks/
+#url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 PdM Task List - R2E3-PdM.csv # optional, for unchallenged operation
+csv_file_name=R2_PdM_Task_List_-_R2C2-PdM.csv # optional, for unchallenged operation
 
 reporter=graybeal      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2E3-D # and R2E3-P
+filter_value=R2C2-P # and R2C2-D
 
 [Projects] # (key, value)
 Common Operating Infrastructure=CIDEVCOI
@@ -57,8 +57,8 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8
-R2E3-P=9
-R2E3-D=10
+R2C1-P=9
+R2C1-D=10
 Jira Task Num=11
 Priority=12
 Work Days=13

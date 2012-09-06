@@ -3,18 +3,18 @@
 #                           '[ ]' contains section designators.
 
 [jira] # Configuration information for jira.
-#url=https://jira.oceanobservatories.org/tasks/
-url=https://jira-dev.oceanobservatories.org/tasks
+url=https://jira.oceanobservatories.org/tasks/
+#url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 ITV Task List - R2C1-ITV.csv # optional, for unchallenged operation
+csv_file_name=R2 ITV Task List - R2C3-ITV.csv # optional, for unchallenged operation
 
 reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2C1
+filter_value=R2C3
 
 [Projects] # (key, value)
 System Integration, Test, and Verification - Release 2=CIINT

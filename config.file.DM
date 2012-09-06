@@ -3,18 +3,18 @@
 #                           '[ ]' contains section designators.
 
 [jira] # Configuration information for jira.
-#url=https://jira.oceanobservatories.org/tasks/
-url=https://jira-dev.oceanobservatories.org/tasks
+url=https://jira.oceanobservatories.org/tasks/
+#url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 DM Task List - R2C1-DM.csv # optional, for unchallenged operation
+csv_file_name=R2 DM Task List - R2C3-DM.csv # optional, for unchallenged operation
 
 reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2C1
+filter_value=R2C3
 
 
 [Projects] # (key, value)
@@ -80,9 +80,9 @@ Work Days=14
 #Remaining Work Days=15
 #Confidence=16
 Assignee=15
-Support Developer=16 # Now Support Roles
-Design URL=17 # Description Page URL
-Comments=18 # Questions and comments
+Comments=16 # Questions and comments
+Support Developer=17 # Now Support Roles
+Design URL=18 # Description Page URL
 Possible Risks=19 # Status
 # Confluence Ready=23
 

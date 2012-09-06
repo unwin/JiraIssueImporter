@@ -7,14 +7,15 @@ url=https://jira.oceanobservatories.org/tasks/
 #url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 MI Sensor Set Task List - SS1C2-MI.csv # optional, for unchallenged operation
+csv_file_name=R2 MI Sensor Set Task List - SS2C1-MI.csv # optional, for unchallenged operation
 
 reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=SS1C2
+filter_value=SS2C1
+# SS1C2 SS1C3 SS2C1 SS2C2 SS2C3 SS3C1 SS3C2 SS3C3
 
 
 [Projects] # (key, value)
@@ -57,37 +58,37 @@ IT-ID=3
 Iteration=4
 Task=5
 Description=6
-Outcome=8
-Risk (RTs)=9  # Risk (COs)
-SS1C1-MI=10
-SS1C2-MI=11
-SS1C3-MI=12
-SS2C1-MI=13
-SS2C2-MI=14
-SS2C3-MI=15
-SS3C1-MI=16
-SS3C2-MI=17
-SS3C3-MI=18
-Priority=19
-Work Days=20
-Assignee=21
-Support Developer=22 # Now Support Roles
-Design URL=23 # Description Page URL
-Comments=24 # Questions and comments
-Possible Risks=30 # Status
+Outcome=7
+Risk (RTs)=8  # Risk (COs)
+SS1C1-MI=9
+SS1C2-MI=10
+SS1C3-MI=11
+SS2C1-MI=12
+SS2C2-MI=13
+SS2C3-MI=14
+SS3C1-MI=15
+SS3C2-MI=16
+SS3C3-MI=17
+Priority=18
+Work Days=19
+Assignee=20
+Support Developer=21 # Now Support Roles
+Design URL=22 # Description Page URL
+Comments=23 # Questions and comments
+Possible Risks=29 # Status
 #Remaining Work Days=15
 #Confidence=16
 # Confluence Ready=23
-Jira Task Num=31
+Jira Task Num=30
 
 
 [Used_mappings]    # This designates the column numbers to what the migrator will use them for, possibly making above redundant.
 Description=6
 TaskTitle=5
-Priority=19
-TimeEstimate=20
-Assignee=21
-AffectsVersion=10,11,12,13,14,15,16,17,18,19 # if X in column, then add column name to affects version.
+Priority=18
+TimeEstimate=19
+Assignee=20
+AffectsVersion=9,10,11,12,13,14,15,16,17 # if X in column, then add column name to affects version.
 Components=0 # value should stay set until overwritten by a non blank value.  Also need to do a link lookup on it.
 [output_mappings] # Column to overwrite with values resulting from addition to Jira.  Dumps input back as output, with the addition of these column mappings which overwrite the origional contents.
-31=JiraKey
+30=JiraKey
