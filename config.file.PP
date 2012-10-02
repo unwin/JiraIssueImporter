@@ -17,7 +17,7 @@ filter_folumn=Iteration
 filter_value=R3I1
 
 [Projects] # (key, value)
-Planning & Prosecution=CIPRODMGT
+Planning & Prosecution=CIDEVPP
 
 [priorities]
 blocker=Blocker
@@ -67,8 +67,8 @@ Support Developer=16
 Design URL=17
 Comments=18
 Status=19
+Possible Risks=20
 #Confidence=20
-#Possible Risks=21
 
 [Used_mappings]    # This designates the column numbers to what the migrator will use them for, possibly making above redundant.
 Description=6

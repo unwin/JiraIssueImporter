@@ -129,8 +129,8 @@ class IT_parser(importer.Parser):
         
         
         customFields = []
-        if self.shared.component_risks_RTs:
-            customFields.append({'values': [self.shared.component_risks_RTs], 'customfieldId': 'customfield_10013', 'key': None})
+        #if self.shared.component_risks_RTs:
+        #    customFields.append({'values': [self.shared.component_risks_RTs], 'customfieldId': 'customfield_10013', 'key': None})
             
         if "task_design_url" in issue and issue["task_design_url"] != '':
             customFields.append({'values': [issue["task_design_url"]], 'customfieldId': 'customfield_10010', 'key': None})
