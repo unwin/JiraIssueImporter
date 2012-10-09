@@ -7,14 +7,14 @@ url=https://jira.oceanobservatories.org/tasks/
 #url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 AS Task List - R2C3-AS.csv # optional, for unchallenged operation
+csv_file_name=R3--AS Task List - R3I1-AS # optional, for unchallenged operation
 
-reporter=tampe    # defaults to username, unless specified here
+reporter=graybeal    # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2C3
+filter_value=R3I1
 
 [Projects] # (key, value)
 Analysis & Synthesis=CIDEVAS
@@ -60,27 +60,25 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8  # Risk (COs)
-R2C1-AS=9
-R2C2-AS=10
-R2C3-AS=11
+R3I1-AS=9
+R3E1-AS=10
+R3E2-AS=11
 Jira Task Num=12
 Priority=13
 Work Days=14
-Remaining Work Days=15
-Confidence=16
-Assignee=17
-Support Developer=18
-Design URL=19
-Comments=20
+Assignee=15
+Support Developer=16
+Design URL=17
+Comments=18
 Possible Risks=21
-Confluence Ready=22
-Status=23
+#Confluence Ready=22
+#Status=23
 [Used_mappings]    # This designates the column numbers to what the migrator will use them for, possibly making above redundant.
 TaskTitle=5
 Description=6
 Priority=13
 TimeEstimate=14
-Assignee=17
+Assignee=15
 AffectsVersion=9,10,11 # if X in column, then add column name to affects version.
 Components=0 # value should stay set until overwritten by a non blank value.  Also need to do a link lookup on it.
 [output_mappings] # Column to overwrite with values resulting from addition to Jira.  Dumps input back as output, with the addition of these column mappings which overwrite the origional contents.

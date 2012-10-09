@@ -7,14 +7,14 @@ url=https://jira.oceanobservatories.org/tasks/
 #url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 DM Task List - R2C3-DM.csv # optional, for unchallenged operation
+csv_file_name=R3--DM Task List - R3I1-DM.csv #  optional, for unchallenged operation
 
-reporter=tampe      # defaults to username, unless specified here
+reporter=graybeal      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2C3
+filter_value=R3I1
 
 
 [Projects] # (key, value)
@@ -71,18 +71,18 @@ Task=5
 Description=6
 Outcome=7
 Risk (RTs)=8  # Risk (COs)
-R2C1-DM=9
-R2C2-DM=10
-R2C3-DM=11
+R3I1-DM=9
+R3E1-DM=10
+R3E2-DM=11
 Jira Task Num=12
 Priority=13
 Work Days=14
 #Remaining Work Days=15
 #Confidence=16
 Assignee=15
-Comments=16 # Questions and comments
-Support Developer=17 # Now Support Roles
-Design URL=18 # Description Page URL
+Support Developer=16 # Now Support Roles
+Design URL=17 # Description Page URL
+Comments=18 # Questions and comments
 Possible Risks=19 # Status
 # Confluence Ready=23
 
