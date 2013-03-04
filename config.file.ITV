@@ -7,14 +7,14 @@ url=https://jira.oceanobservatories.org/tasks/
 #url=https://jira-dev.oceanobservatories.org/tasks
 username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
-csv_file_name=R2 ITV Task List - R2C3-ITV.csv # optional, for unchallenged operation
+csv_file_name=R2_ITV_Task_List_R2C4-ITV.csv # optional, for unchallenged operation
 
 reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
 filter_folumn=Iteration
-filter_value=R2C3
+filter_value=R2C4
 
 [Projects] # (key, value)
 System Integration, Test, and Verification - Release 2=CIINT
@@ -60,15 +60,16 @@ Risk (RTs)=8
 R2C1-INT=9
 R2C2-INT=10
 R2C3-INT=11
-Jira Task Num=12
-Priority=13
-Work Days=14
-Assignee=15
-Support Developer=16
-Design URL=17
-Comments=18
-Possible Risks=19
-Confluence Ready=20
+R2C4-INT=12
+Jira Task Num=13
+Priority=14
+Work Days=15
+Assignee=16
+Support Developer=17
+Design URL=18
+Comments=19
+Possible Risks=20
+Confluence Ready=21
 #needs to be removed
 #Remaining Work Days=15
 #Confidence=16
@@ -78,10 +79,10 @@ Confluence Ready=20
 [Used_mappings]    # This designates the column numbers to what the migrator will use them for, possibly making above redundant.
 Description=2
 TaskTitle=1
-Priority=13
+Priority=14
 TimeEstimate=14
-Assignee=15
-AffectsVersion=9,10,11 # if X in column, then add column name to affects version.
+Assignee=16
+AffectsVersion=9,10,11,12 # if X in column, then add column name to affects version.
 Components=0 # value should stay set until overwritten by a non blank value.  Also need to do a link lookup on it.
 [output_mappings] # Column to overwrite with values resulting from addition to Jira.  Dumps input back as output, with the addition of these column mappings which overwrite the origional contents.
-12=JiraKey
+13=JiraKey

@@ -9,7 +9,7 @@ username=unwin      # optional, for unchallenged operation
 #password=PASSWORD      # optional, for unchallenged operation
 csv_file_name=R3 PnP Task List - R3I1-PP.csv # optional, for unchallenged operation
 
-reporter=graybeal      # defaults to username, unless specified here
+reporter=tampe      # defaults to username, unless specified here
 
 separator=,
 quote_char="
